@@ -9,10 +9,11 @@ class Pessoa:
 if __name__ == '__main__':
     mateus = Pessoa(nome='Mateus')
     helena = Pessoa(mateus, nome='Helena')
-    print(Pessoa.cumprimentar(mateus))
-    print(id(mateus))
-    print(mateus.cumprimentar())
-    print(mateus.nome)
-    print(mateus.idade)
-    print(helena.filhos)
+    print(Pessoa.cumprimentar(helena))
+    print(id(helena))
+    print(helena.cumprimentar())
+    print(helena.nome)
+    print(helena.idade)
+    for filho in mateus.filhos:
+        print(filho.mateus)
 
